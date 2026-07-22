@@ -24,6 +24,16 @@ cv2_assign presents core OpenCV concepts in a reproducible notebook format. It i
 
 The repository centers on one Jupyter notebook. This structure keeps the computer-vision workflow visible from input through transformation and output.
 
+## Architecture Diagram
+
+```mermaid
+flowchart LR
+  Images["Image Inputs"] --> Notebook["OpenCV Notebook"]
+  Notebook --> Operations["Core CV Operations"]
+  Operations --> Visuals["Intermediate Visual Outputs"]
+  Visuals --> Results["Final Processed Images"]
+```
+
 ## Technology Stack
 
 - Python notebook workflow.
